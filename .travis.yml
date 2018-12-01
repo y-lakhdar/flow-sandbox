@@ -18,7 +18,7 @@ branches:
   - master
   - develop
 before_deploy:
-  - npm run minimize # not sure if it is required here. Just in case
+  - npm run minimize
 deploy:
   - provider: npm
     email: ylakhdar@coveo.com
