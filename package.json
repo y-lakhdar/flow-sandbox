@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/y-lakhdar/flow-sandbox#readme",
   "dependencies": {
-    "typescript": "^2.5.3"
   },
   "devDependencies": {
     "@types/node": "8.0.20",
@@ -37,6 +36,7 @@
     "run-sequence": "^2.2.1",
     "ts-loader": "^2.3.7",
     "tslint-webpack-plugin": "^1.2.0",
+    "typescript": "^2.5.3",
     "webpack": "1.15.0",
     "webpack-dev-server": "^1.14.1",
     "webpack-fail-plugin": "^1.0.6",
