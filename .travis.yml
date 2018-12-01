@@ -1,5 +1,8 @@
 language: node_js
 notifications:
+  email:
+    on_success: change
+    on_failure: always
 node_js:
   - 6.10.3
 cache:
@@ -15,10 +18,6 @@ script:
   - npm run minimize
 after_success:
 - npm run zipForGitReleases
-branches:
-  only:
-    - master
-    - develop
 before_deploy:
   - npm run minimize
 deploy:
@@ -40,3 +39,8 @@ deploy:
     on:
       tags: true
       all_branches: true
+branches:
+  only:
+    - master
+    - develop
+    - "/[0-9]+\\.[0-9]+\\.[0-9]+/"
