@@ -10,7 +10,6 @@ requireDir('./gulpTasks');
 
 gulp.task('default', ['build']);
 
-// Remove bin and all zip folders.
 gulp.task('clean', function() {
   return del(['./bin', './zip/**.zip', '*.log']);
 });
