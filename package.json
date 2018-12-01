@@ -1,6 +1,6 @@
 {
   "name": "flow-sandbox",
-  "version": "1.6.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "lintfix": "node node_modules/tsjs --tslint tslint.json --all --exclude node_modules/",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "build": "gulp",
+    "zipForGitReleases": "gulp zipForGitReleases",
     "minimize": "gulp --minimize"
   },
   "repository": {
@@ -29,6 +30,7 @@
     "gulp-nodemon": "^2.4.2",
     "gulp-shell": "^0.6.5",
     "gulp-util": "^3.0.8",
+    "gulp-zip": "^4.2.0",
     "json-loader": "^0.5.7",
     "prettier": "^1.15.3",
     "require-dir": "^1.2.0",
