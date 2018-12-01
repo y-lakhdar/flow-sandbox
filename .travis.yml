@@ -41,8 +41,8 @@ deploy:
       tags: true
       repo: y-lakhdar/flow-sandbox
       all_branches: true
-# branches:
-#   only:
-#     - master
-#     - develop
-#     - /v\/[0-9]+\\.[0-9]+\\.[0-9]+/
+branches:
+  only:
+    - master
+    - develop
+    - /v\/[0-9]+\\.[0-9]+\\.[0-9]+/
