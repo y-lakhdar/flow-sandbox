@@ -8,7 +8,7 @@ before_install:
 notifications:
   email: false
 node_js:
-  - 8.5.0
+  - 8.6
 os:
   - windows
   - osx
