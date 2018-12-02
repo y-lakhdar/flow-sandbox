@@ -1,6 +1,6 @@
 {
   "name": "flow-sandbox",
-  "version": "1.25.0",
+  "version": "1.26.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -50,9 +50,7 @@
     "webpack-dev-server": "^1.14.1",
     "webpack-fail-plugin": "^1.0.6",
     "webpack-node-externals": "^1.5.4",
-    "webpack-notifier": "^1.5.1",
-    "semantic-release": "^15.12.3",
-    "travis-deploy-once": "^5.0.9"
+    "webpack-notifier": "^1.5.1"
   },
   "prettier": {
     "printWidth": 140,
