@@ -8,4 +8,6 @@ You should install the Coveo JavaScript Search UI Framework as an npm package:
 
     npm install flow-sandbox
 
+Fix issue 2 and 3
+
 ...
