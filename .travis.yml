@@ -1,14 +1,48 @@
 language: node_js
-cache:
-  yarn: true
-  directories:
-  - node_modules
 notifications:
-  email: false
+  email:
+    on_success: change
+    on_failure: always
 node_js:
-  - 8.6
+  - 8.5.0
+cache:
+  directories:
+    - node_modules
+before_script:
+  - npm install -g gulp
+before_install:
+  - npm install -g npm@5.6.0
+script:
+  - source read.version.sh
+  - echo "v$TRAVIS_TAG"
+  - npm run minimize
 after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
+  - npm run zipForGitReleases
+before_deploy:
+  - npm run minimize
+deploy:
+  - provider: npm
+    email: ylakhdar@coveo.com
+    skip_cleanup: true
+    api_key:
+      secure:  xtWYZnfn95kAOms1xu+CCGtYrlcD6sxHpann8dksQlZcqyIjgNUzh0swRNNEJ5OR3QYy5STCmM99MI6ubLKuGHz7x5ELm/XUIc4AkAgEWiSMQviuHIGpiiPwhFIOcCFoEOdozltK6zNPcyPTL3XcfuIV0yDFtxEDNUrVg2QdY238GbzRX1oaNWTlGRkGoi6geX0ifvO8pShHQdU9jDa3hIdXUwgw8sMFknsXOHpG278levKKx7YKOJzMvBPMMfhLJX4aVg3DJT8ezAOeUt6gpY18WNGYh+87guPcOdXXoTEwM6jMf8FnwZm5VAWP1Z3Ig/2dwavT4yJs9oio5Yj7/hgA5kRcS3x02W37iG/znXc59DH1M37iI4PA5rjTLYfCZUnby57ud8FkWEN4ZrM8A4E94A87JylBRTgxStAy2pTi2crIov9LWqRHyg0IJi+AKTtJn+jdkcwcO5qR8eu5x1NCkerRjXK4oWbwBHlgtX8/kW1prSaI9jmrY7oWAmKY7wsRCQC/bqaYfqw0oyriY+gpruCHA3sLF3CZ9D2uhtZqmuzbNMmu4BhanU/dmIW70bnSGixu5Ea6y2HDpImN8AIaKvWD8DtFqqTNLfoEjs2X1sa+uy7fDWs7GMk/5SBa2WkbrQfd7pYbqCxRrQgMcbxgK4N429bAEii8fkzlaKw=
+    on:
+      tags: true
+      repo: y-lakhdar/flow-sandbox
+      all_branches: true
+  - provider: releases
+    api_key:
+      secure: tS1qdXHnJ/+3WTmFmGDdkiSvKVvARePVZ2Oe073EiGDt5NrKm/w/0btbLFy7VPbSCldlazltbdsdksfjc4skkESTspP1OgnFnZscd00UzPnkWP/CMeK/rRS87Yieqjt9c6XJDZmbfTnhfg0TgTD5E/K+kmchY2IvGZznE4xZHnzaNXhiwQD3zeqTsQDvWwYXCwf2jI0nP5GWm3jGJOzlUdaYiRQImS9573wwsWkKrB+CJxs77YvPjrm0Dfw8IB2XCa9IgisufxhE52yyRivVQOadk+hfhQwcbwAPJd1TNLTG7wkiMGyd93alnwR2kYgVh8UP+gIVcM37p4hmEApL5zu0vEZ5y9EPMQfO7/RHkwnt07/afm72nkbcTrP/eqDRoBA/63Qr6ARLeHfKwoYwDpwTmlb1YR0IvlxZxVXnpHs+ET4Nszdcr07wiLqpsQSQPAanJ/9NXtrZAbpGzV753AvDmICvVzcTnVEYIGJmYcpbmI5o7WeuqnctS2jRQUM5uL3Vfa/fl3AboBd+ZvhReEzKV8Vq7ZtFSEIPWS8KiXe3MzX8KX9S1mv/7RwjBT/eVP5wSx5BboaTXLEuvVg3/EziNhmtAZhYZNG7+uhFITenlR34wbCr7e5QO+rafTYVLWY3IsnRygaJKAJ9mvKypGhfulxVKxCruIh6er2KHR0=
+    file:
+      - flow-sandbox.zip
+    file_glob: true
+    skip_cleanup: true
+    on:
+      tags: true
+      repo: y-lakhdar/flow-sandbox
+      all_branches: true
 branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+  only:
+    - master
+    - develop
+    - "/[0-9]+\\.[0-9]+\\.[0-9]+/"
