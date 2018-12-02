@@ -14,11 +14,6 @@ const getNextVersion = currentVersion => {
           return;
         }
 
-        console.log('*********************');
-        console.log(currentVersion);
-        console.log(release.releaseType);
-        console.log('*********************');
-        
         const nextVersion = semver.valid(release.releaseType) || semver.inc(currentVersion, release.releaseType);
 
         resolve(nextVersion);
@@ -30,3 +25,4 @@ const getNextVersion = currentVersion => {
 getNextVersion(packageJson.version)
   .then(version => console.log(version))
   .catch(error => console.log(error));
+

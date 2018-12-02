@@ -1,6 +1,6 @@
 {
   "name": "flow-sandbox",
-  "version": "1.17.0",
+  "version": "1.20.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,17 @@
     "lintfix": "node node_modules/tsjs --tslint tslint.json --all --exclude node_modules/",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "build": "gulp",
+    "test": "echo 'running test...'",
     "get-next-version": "node ./get-next-version.js",
     "release": "standard-version",
     "zipForGitReleases": "gulp zipForGitReleases",
-    "minimize": "gulp --minimize"
+    "minimize": "gulp --minimize",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once --pro"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/y-lakhdar/flow-sandbox.git"
+    "url": "https://github.com/y-lakhdar/flow-sandbox.git"
   },
   "author": "",
   "license": "ISC",
@@ -47,7 +50,9 @@
     "webpack-dev-server": "^1.14.1",
     "webpack-fail-plugin": "^1.0.6",
     "webpack-node-externals": "^1.5.4",
-    "webpack-notifier": "^1.5.1"
+    "webpack-notifier": "^1.5.1",
+    "semantic-release": "^15.12.3",
+    "travis-deploy-once": "^5.0.9"
   },
   "prettier": {
     "printWidth": 140,
@@ -71,5 +76,8 @@
   },
   "bin": {
     "flowtest": "./bin/client-global.js"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }

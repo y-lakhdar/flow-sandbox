@@ -4,7 +4,7 @@ notifications:
     on_success: change
     on_failure: always
 node_js:
-  - 6.10.3
+  - 8.5.0
 cache:
   directories:
     - node_modules
@@ -17,7 +17,7 @@ script:
   - echo "v$TRAVIS_TAG"
   - npm run minimize
 after_success:
-- npm run zipForGitReleases
+  - npm run zipForGitReleases
 before_deploy:
   - npm run minimize
 deploy:
@@ -41,16 +41,8 @@ deploy:
       tags: true
       repo: y-lakhdar/flow-sandbox
       all_branches: true
-<<<<<<< HEAD
-# branches:
-#   only:
-#     - master
-#     - develop
-#     - /release\/[0-9]+\\.[0-9]+\\.[0-9]+/
-=======
 branches:
   only:
     - master
     - develop
-    - /v\/[0-9]+\\.[0-9]+\\.[0-9]+/
->>>>>>> release/1.17.0
+    - "/[0-9]+\\.[0-9]+\\.[0-9]+/"
