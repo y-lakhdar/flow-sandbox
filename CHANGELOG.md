@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.22.0"></a>
+# [1.22.0](https://github.com/y-lakhdar/flow-sandbox/compare/v1.16.0...v1.22.0) (2018-12-02)
+
+
+### Bug Fixes
+
+* change travis version ([82bfb11](https://github.com/y-lakhdar/flow-sandbox/commit/82bfb11))
+* Fix issue ([#2](https://github.com/y-lakhdar/flow-sandbox/issues/2)) ([e67fb3f](https://github.com/y-lakhdar/flow-sandbox/commit/e67fb3f))
+* test fix ([a1bc37f](https://github.com/y-lakhdar/flow-sandbox/commit/a1bc37f))
+
+
+### Features
+
+* add test ([24da619](https://github.com/y-lakhdar/flow-sandbox/commit/24da619))
+* change console log ([2570a5f](https://github.com/y-lakhdar/flow-sandbox/commit/2570a5f))
+* test convential-commit ([4b3cc26](https://github.com/y-lakhdar/flow-sandbox/commit/4b3cc26))
+* update travis config ([ea69643](https://github.com/y-lakhdar/flow-sandbox/commit/ea69643))
+
+
+
 <a name="1.21.0"></a>
 # [1.21.0](https://github.com/y-lakhdar/flow-sandbox/compare/v1.16.0...v1.21.0) (2018-12-02)
 
