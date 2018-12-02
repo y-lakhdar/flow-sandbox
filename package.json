@@ -8,6 +8,7 @@
     "lintfix": "node node_modules/tsjs --tslint tslint.json --all --exclude node_modules/",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "build": "gulp",
+    "test": "echo 'running test...'",
     "get-next-version": "node ./get-next-version.js",
     "release": "standard-version",
     "zipForGitReleases": "gulp zipForGitReleases",
