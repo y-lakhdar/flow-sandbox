@@ -1,6 +1,6 @@
 {
   "name": "flow-sandbox",
-  "version": "1.26.1",
+  "version": "1.26.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -74,8 +74,5 @@
   },
   "bin": {
     "flowtest": "./bin/client-global.js"
-  },
-  "publishConfig": {
-    "access": "restricted"
   }
 }
