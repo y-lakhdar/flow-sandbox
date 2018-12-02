@@ -25,3 +25,4 @@ const getNextVersion = currentVersion => {
 getNextVersion(packageJson.version)
   .then(version => console.log(version))
   .catch(error => console.log(error));
+
