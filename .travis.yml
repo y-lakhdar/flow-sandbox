@@ -3,8 +3,6 @@ cache:
   yarn: true
   directories:
   - node_modules
-before_install:
-  - npm install -g npm@5.5.1
 notifications:
   email: false
 node_js:
