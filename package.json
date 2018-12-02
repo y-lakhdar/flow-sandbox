@@ -74,8 +74,5 @@
   },
   "bin": {
     "flowtest": "./bin/client-global.js"
-  },
-  "publishConfig": {
-    "access": "restricted"
   }
 }

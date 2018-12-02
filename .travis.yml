@@ -12,12 +12,10 @@ before_install:
   - npm install -g npm@5.6.0
 script:
   - source read.version.sh
-  - echo "v$TRAVIS_TAG"
+  - echo "$TRAVIS_TAG"
   - npm run minimize
 after_success:
   - npm run zipForGitReleases
-before_deploy:
-  - npm run minimize
 deploy:
   - provider: npm
     email: ylakhdar@coveo.com
