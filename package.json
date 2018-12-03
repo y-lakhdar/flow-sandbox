@@ -1,6 +1,6 @@
 {
   "name": "flow-sandbox",
-  "version": "1.26.6",
+  "version": "1.26.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,8 @@
     "build": "gulp",
     "test": "echo 'running test...'",
     "get-next-version": "node ./get-next-version.js",
-    "release": "standard-version",
+    "standard-version": "standard-version",
+    "release": "gulp release",
     "zipForGitReleases": "gulp zipForGitReleases",
     "minimize": "gulp --minimize",
     "semantic-release": "semantic-release",
