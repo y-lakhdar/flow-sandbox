@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.26.3"></a>
+## [1.26.3](https://github.com/y-lakhdar/flow-sandbox/compare/v1.26.0...v1.26.3) (2018-12-03)
+
+
+### Bug Fixes
+
+* Remove extra console logs ([b1ca9c8](https://github.com/y-lakhdar/flow-sandbox/commit/b1ca9c8)), closes [#1](https://github.com/y-lakhdar/flow-sandbox/issues/1) [#2](https://github.com/y-lakhdar/flow-sandbox/issues/2)
+
+
+
 <a name="1.26.2"></a>
 ## [1.26.2](https://github.com/y-lakhdar/flow-sandbox/compare/v1.26.0...v1.26.2) (2018-12-02)
 
