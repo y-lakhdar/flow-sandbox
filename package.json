@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "flow:version": "echo 'npm version'",
+    "flow:version": "npm version --no-git-tag-version",
+    "preversion": "git checkout develop",
+    "version": "git flow release start v$npm_package_version",
+    "postversion": "git flow release finish v$npm_package_version",
     "precommit": "lint-staged",
     "lintfix": "node node_modules/tsjs --tslint tslint.json --all --exclude node_modules/",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
