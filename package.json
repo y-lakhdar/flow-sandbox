@@ -1,6 +1,6 @@
 {
   "name": "flow-sandbox",
-  "version": "1.26.2",
+  "version": "1.26.4",
   "description": "",
   "main": "index.js",
   "scripts": {
