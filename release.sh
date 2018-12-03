@@ -8,7 +8,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # do dangerous stuff
     git flow release start ${nextNpmVersion}
-    npm run release
+    npm run standard-version
     git flow release finish ${nextNpmVersion}
     echo "Pushing to the master"
     git push origin master
