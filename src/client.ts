@@ -1,5 +1,5 @@
 const pkg: any = require('./../package.json');
 
-console.log('--------------------');
+console.log('---------dsadsa-----------');
 console.log(pkg.version);
 console.log('---------------------');
