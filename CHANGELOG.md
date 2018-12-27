@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.31.1"></a>
+## [1.31.1](https://github.com/y-lakhdar/flow-sandbox/compare/v1.31.0...v1.31.1) (2018-12-27)
+
+
+### Bug Fixes
+
+* remove description ([e15fa15](https://github.com/y-lakhdar/flow-sandbox/commit/e15fa15))
+
+
+
 <a name="1.31.0"></a>
 # [1.31.0](https://github.com/y-lakhdar/flow-sandbox/compare/v1.26.14...v1.31.0) (2018-12-27)
 
