@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.30.0"></a>
+# [1.30.0](https://github.com/y-lakhdar/flow-sandbox/compare/v1.26.10...v1.30.0) (2018-12-27)
+
+
+### Bug Fixes
+
+* remove description ([7c6eea0](https://github.com/y-lakhdar/flow-sandbox/commit/7c6eea0))
+* remove description ([568aa03](https://github.com/y-lakhdar/flow-sandbox/commit/568aa03))
+* test 2 ([4f15042](https://github.com/y-lakhdar/flow-sandbox/commit/4f15042))
+* test no-verify option ([5c2fde1](https://github.com/y-lakhdar/flow-sandbox/commit/5c2fde1))
+
+
+### Features
+
+* better logs ([e4cc67b](https://github.com/y-lakhdar/flow-sandbox/commit/e4cc67b))
+* better logs ([e8149bb](https://github.com/y-lakhdar/flow-sandbox/commit/e8149bb))
+
+
+
 <a name="1.29.0"></a>
 # [1.29.0](https://github.com/y-lakhdar/flow-sandbox/compare/v1.26.10...v1.29.0) (2018-12-27)
 
