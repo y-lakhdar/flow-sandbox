@@ -1,6 +1,6 @@
 {
   "name": "flow-sandbox",
-  "version": "1.26.10",
+  "version": "1.26.11",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "build": "gulp",
     "test": "echo 'running test...'",
     "get-next-version": "node ./get-next-version.js",
-    "standard-version": "standard-version",
+    "standard-version": "standard-version --no-verify",
     "release": "gulp release",
     "zipForGitReleases": "gulp zipForGitReleases",
     "minimize": "gulp --minimize",
@@ -52,6 +52,11 @@
     "webpack-fail-plugin": "^1.0.6",
     "webpack-node-externals": "^1.5.4",
     "webpack-notifier": "^1.5.1"
+  },
+  "standard-version": {
+    "skip": {
+      "tag": true
+    }
   },
   "prettier": {
     "printWidth": 140,
