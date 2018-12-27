@@ -1,6 +1,6 @@
 {
   "name": "flow-sandbox",
-  "version": "1.26.8",
+  "version": "1.26.10",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -56,11 +56,6 @@
   "prettier": {
     "printWidth": 140,
     "singleQuote": true
-  },
-  "standard-version": {
-    "skip": {
-      "tag": true
-    }
   },
   "lint-staged": {
     "*.ts": [
