@@ -1,7 +1,7 @@
 {
   "name": "flow-sandbox",
   "version": "1.28.0",
-  "description": "dsdasdsads",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "precommit": "lint-staged",
