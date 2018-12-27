@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.26.14"></a>
+## [1.26.14](https://github.com/y-lakhdar/flow-sandbox/compare/v1.26.13...v1.26.14) (2018-12-27)
+
+
+
 <a name="1.26.13"></a>
 ## [1.26.13](https://github.com/y-lakhdar/flow-sandbox/compare/v1.26.11...v1.26.13) (2018-12-27)
 
