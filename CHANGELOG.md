@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.31.2"></a>
+## [1.31.2](https://github.com/y-lakhdar/flow-sandbox/compare/v1.31.1...v1.31.2) (2019-08-16)
+
+
+
+<a name="1.31.1"></a>
+## [1.31.1](https://github.com/y-lakhdar/flow-sandbox/compare/v1.31.0...v1.31.1) (2018-12-27)
+
+
+### Bug Fixes
+
+* remove description ([e15fa15](https://github.com/y-lakhdar/flow-sandbox/commit/e15fa15))
+
+
+
+<a name="1.31.0"></a>
+# [1.31.0](https://github.com/y-lakhdar/flow-sandbox/compare/v1.26.14...v1.31.0) (2018-12-27)
+
+
+### Bug Fixes
+
+* add description ([f407628](https://github.com/y-lakhdar/flow-sandbox/commit/f407628))
+* remove description ([7c6eea0](https://github.com/y-lakhdar/flow-sandbox/commit/7c6eea0))
+* remove description ([568aa03](https://github.com/y-lakhdar/flow-sandbox/commit/568aa03))
+
+
+### Features
+
+* better logs ([e4cc67b](https://github.com/y-lakhdar/flow-sandbox/commit/e4cc67b))
+* better logs ([e8149bb](https://github.com/y-lakhdar/flow-sandbox/commit/e8149bb))
+
+
+
 <a name="1.30.0"></a>
 # [1.30.0](https://github.com/y-lakhdar/flow-sandbox/compare/v1.26.10...v1.30.0) (2018-12-27)
 
