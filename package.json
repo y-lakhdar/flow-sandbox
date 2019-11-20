@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gulp",
+    "build": "echo 'Building'",
     "test": "echo 'running test...'",
     "release": "semantic-release",
     "zipForGitReleases": "gulp zipForGitReleases"
@@ -29,7 +29,7 @@
     "conventional-recommended-bump": "^4.0.4",
     "cz-conventional-changelog": "^3.0.2",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-nodemon": "^2.4.2",
     "gulp-shell": "^0.6.5",
     "gulp-util": "^3.0.8",
