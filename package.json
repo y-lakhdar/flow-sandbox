@@ -4,18 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "precommit": "lint-staged",
-    "lintfix": "node node_modules/tsjs --tslint tslint.json --all --exclude node_modules/",
-    "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "build": "gulp",
     "test": "echo 'running test...'",
-    "get-next-version": "node ./get-next-version.js",
-    "standard-version": "standard-version",
-    "release": "gulp release",
-    "zipForGitReleases": "gulp zipForGitReleases",
-    "minimize": "gulp --minimize",
-    "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once --pro"
+    "release": "semantic-release",
+    "zipForGitReleases": "gulp zipForGitReleases"
   },
   "repository": {
     "type": "git",
@@ -29,21 +21,26 @@
   "homepage": "https://github.com/y-lakhdar/flow-sandbox#readme",
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/travis-cli": "^8.2.0",
     "@types/node": "8.0.20",
     "colors": "^1.3.2",
     "conventional-recommended-bump": "^4.0.4",
+    "cz-conventional-changelog": "^3.0.2",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.4.2",
     "gulp-shell": "^0.6.5",
     "gulp-util": "^3.0.8",
     "gulp-zip": "^4.2.0",
+    "husky": "^3.1.0",
     "json-loader": "^0.5.7",
+    "lint-staged": "^9.4.3",
     "prettier": "^1.15.3",
     "require-dir": "^1.2.0",
     "run-sequence": "^2.2.1",
-    "semver": "^5.6.0",
-    "standard-version": "^4.4.0",
+    "semantic-release": "^15.13.31",
     "ts-loader": "^2.3.7",
     "tslint-webpack-plugin": "^1.2.0",
     "typescript": "^2.5.3",
@@ -53,6 +50,13 @@
     "webpack-node-externals": "^1.5.4",
     "webpack-notifier": "^1.5.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
   "prettier": {
     "printWidth": 140,
     "singleQuote": true
@@ -60,13 +64,18 @@
   "lint-staged": {
     "*.ts": [
       "tslint --fix",
-      "prettier --write",
+      "tslint -c ./tslint.json -p ./tsconfig.json --fix",
       "git add"
     ],
-    "*.{js,json}": [
+    "*.{js}": [
       "prettier --write",
       "git add"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "bin": {
     "flowtest": "./bin/client-global.js"
