@@ -16,7 +16,7 @@
   "dependencies": {
     "commander": "^2.19.0",
     "typescript": "^3.2.2",
-    "underscore": "1.9.1",
+    "underscore": "1.12.1",
     "update-notifier": "^2.5.0"
   },
   "devDependencies": {
